@@ -9,7 +9,7 @@ async function bery() {
         const client = new Beryx.Beryx.Filecoin({ jwt, network: "wallaby" });
     
         const response1 = await client.data.getTipset(1);
-        const response2 = await client.tools.convertHash("bafy2bzacecktivolqszdw4m6p2l4xd46bypkaqfcuw354vo5emoplwupvhsl6", "fil");
+        const response2 = await client.tools.convertHash("bafy2bzacecktivolqszdw4m6p2l4xd46bypkaqfcuw354vo5emoplwupvhsl6", "hyperspace");
         console.log(response2)
         
     } catch (error) {
